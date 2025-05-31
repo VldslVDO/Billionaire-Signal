@@ -4,48 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Свіжі новини крипти</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #8e44ad, #f5e6ca); /* фіолетово-бежевий фон */
+      background: linear-gradient(to right, #8e44ad, #f5e6ca);
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      animation: fadeIn 2s ease-in;
     }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.3em;
-      margin-bottom: 30px;
-      white-space: pre-line; /* Зберігаємо перенос рядків */
-    }
-    .btn {
-      background-color: #f5e6ca;
-      color: #8e44ad;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background-color: #8e44ad;
-      color: #f5e6ca;
-    }
-  </style>
-</head>
-<body>
-  <h1>🤖 Свіжі новини крипти щодня!</h1>
-  <p>📲 Підписка на наш Telegram — і ти в темі!<br>⚡️ Не пропусти найцікавіше — приєднуйся вже зараз!</p>
-  <a href="https://t.me/+pJeg81A44cg5YWQy" class="btn">Приєднатися</a>
-</body>
-</html>
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
