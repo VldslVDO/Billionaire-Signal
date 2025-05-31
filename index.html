@@ -35,27 +35,33 @@
 
     p {
       font-size: 1.3em;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       white-space: pre-line;
       max-width: 600px;
     }
 
     .btn {
-      background-color: #f5e6ca;
-      color: #8e44ad;
+      background: linear-gradient(-45deg, #ff7e5f, #feb47b, #f5e6ca, #8e44ad);
+      background-size: 400% 400%;
+      color: white;
       padding: 15px 30px;
       font-size: 1.2em;
       font-weight: 600;
       border: none;
       border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s;
+      transition: transform 0.3s;
+      animation: gradientMove 5s ease infinite;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
     .btn:hover {
-      background-color: #8e44ad;
-      color: #f5e6ca;
       transform: scale(1.1);
     }
 
@@ -69,11 +75,22 @@
     .benefits li {
       margin-bottom: 10px;
     }
+
+    .subscribers {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: #f5e6ca;
+    }
   </style>
 </head>
 <body>
   <h1>🤖 Свіжі новини крипти щодня!</h1>
   <p>📲 Підписка на наш Telegram — і ти в темі!<br>⚡️ Не пропусти найцікавіше — приєднуйся вже зараз!</p>
+
+  <p class="subscribers">
+    📈 На каналі вже понад <strong>12,221</strong> підписник!
+  </p>
+
   <a href="https://t.me/+pJeg81A44cg5YWQy" class="btn">🔥 Відкрий світ крипти!</a>
 
   <ul class="benefits">
