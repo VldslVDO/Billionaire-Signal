@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Свіжі новини крипти</title>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -20,6 +19,7 @@
       justify-content: center;
       align-items: center;
       animation: fadeIn 2s ease-in;
+      padding: 20px;
     }
 
     @keyframes fadeIn {
@@ -28,24 +28,24 @@
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-bottom: 20px;
       white-space: pre-line;
-      max-width: 600px;
+      max-width: 90%;
     }
 
     .btn {
       background: linear-gradient(-45deg, #ff7e5f, #feb47b, #f5e6ca, #8e44ad);
       background-size: 400% 400%;
       color: white;
-      padding: 15px 30px;
-      font-size: 1.2em;
+      padding: 12px 25px;
+      font-size: 1.1em;
       font-weight: 600;
       border: none;
       border-radius: 8px;
@@ -53,6 +53,8 @@
       transition: transform 0.3s;
       animation: gradientMove 5s ease infinite;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: inline-block;
+      margin-top: 10px;
     }
 
     @keyframes gradientMove {
@@ -66,10 +68,10 @@
     }
 
     .benefits {
-      margin-top: 30px;
-      font-size: 1.1em;
+      margin-top: 20px;
+      font-size: 1em;
       text-align: left;
-      max-width: 600px;
+      max-width: 90%;
     }
 
     .benefits li {
@@ -77,9 +79,25 @@
     }
 
     .subscribers {
-      font-size: 1.2em;
-      margin-bottom: 15px;
+      font-size: 1.1em;
+      margin-bottom: 10px;
       color: #f5e6ca;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+      .subscribers {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
