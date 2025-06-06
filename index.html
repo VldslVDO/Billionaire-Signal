@@ -9,79 +9,70 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #8e44ad, #f5e6ca);
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
       color: white;
       font-family: 'Poppins', sans-serif;
       text-align: center;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      animation: fadeIn 2s ease-in;
       padding: 20px;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      backdrop-filter: brightness(0.9);
     }
 
     h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
 
     p {
       font-size: 1.2em;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       white-space: pre-line;
       max-width: 90%;
-    }
-
-    .btn {
-      background: linear-gradient(-45deg, #ff7e5f, #feb47b, #f5e6ca, #8e44ad);
-      background-size: 400% 400%;
-      color: white;
-      padding: 12px 25px;
-      font-size: 1.1em;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: transform 0.3s;
-      animation: gradientMove 5s ease infinite;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    @keyframes gradientMove {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-    }
-
-    .benefits {
-      margin-top: 20px;
-      font-size: 1em;
-      text-align: left;
-      max-width: 90%;
-    }
-
-    .benefits li {
-      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     }
 
     .subscribers {
       font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #fffbd8;
+    }
+
+    .telegram-btn {
+      background-color: #229ED9;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .telegram-btn:hover {
+      background-color: #007ab8;
+      transform: scale(1.05);
+    }
+
+    .benefits {
+      margin-top: 30px;
+      font-size: 1em;
+      text-align: left;
+      max-width: 90%;
+      background-color: rgba(0,0,0,0.4);
+      padding: 15px 25px;
+      border-radius: 12px;
+    }
+
+    .benefits li {
       margin-bottom: 10px;
-      color: #f5e6ca;
     }
 
     @media (max-width: 600px) {
@@ -91,9 +82,9 @@
       p {
         font-size: 1em;
       }
-      .btn {
+      .telegram-btn {
         font-size: 1em;
-        padding: 10px 20px;
+        padding: 12px 24px;
       }
       .subscribers {
         font-size: 1em;
@@ -109,7 +100,7 @@
     📈 На каналі вже понад <strong>12,221</strong> підписник!
   </p>
 
-  <a href="https://t.me/+pJeg81A44cg5YWQy" class="btn">🔥 Відкрий світ крипти!</a>
+  <a href="https://t.me/+pJeg81A44cg5YWQy" class="telegram-btn">✈️ Приєднатись у Telegram</a>
 
   <ul class="benefits">
     <li>✅ Ексклюзивні новини та аналітика</li>
