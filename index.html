@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Свіжі новини крипти</title>
+  <title>ОСЬО! Telegram-канал</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -11,49 +11,74 @@
       padding: 0;
       background: url("background.jpg") no-repeat center center fixed;
       background-size: cover;
-      color: white;
       font-family: 'Poppins', sans-serif;
-      text-align: center;
-      min-height: 100vh;
+      color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       padding: 20px;
-      backdrop-filter: brightness(0.9);
+      text-align: center;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 20px;
+      border-radius: 16px;
+      max-width: 360px;
+      width: 100%;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid white;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 15px;
-      white-space: pre-line;
-      max-width: 90%;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      font-size: 2em;
+      margin: 0 0 5px;
     }
 
     .subscribers {
-      font-size: 1.1em;
+      font-size: 0.9em;
+      color: #ccc;
       margin-bottom: 20px;
-      color: #fffbd8;
+    }
+
+    .description {
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      font-size: 0.95em;
+      margin-bottom: 10px;
+    }
+
+    .link {
+      font-size: 0.85em;
+      word-break: break-all;
+      color: #aaa;
+      margin-bottom: 20px;
     }
 
     .telegram-btn {
+      display: inline-block;
       background-color: #229ED9;
       color: white;
-      padding: 15px 30px;
-      font-size: 1.2em;
+      padding: 12px 24px;
+      font-size: 1em;
       font-weight: bold;
       border: none;
       border-radius: 50px;
       text-decoration: none;
-      transition: background-color 0.3s, transform 0.3s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: 0.3s ease;
     }
 
     .telegram-btn:hover {
@@ -61,51 +86,22 @@
       transform: scale(1.05);
     }
 
-    .benefits {
-      margin-top: 30px;
-      font-size: 1em;
-      text-align: left;
-      max-width: 90%;
-      background-color: rgba(0,0,0,0.4);
-      padding: 15px 25px;
-      border-radius: 12px;
-    }
-
-    .benefits li {
-      margin-bottom: 10px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8em;
-      }
-      p {
-        font-size: 1em;
-      }
-      .telegram-btn {
-        font-size: 1em;
-        padding: 12px 24px;
-      }
-      .subscribers {
-        font-size: 1em;
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 15px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>🤖 Свіжі новини крипти щодня!</h1>
-  <p>📲 Підписка на наш Telegram — і ти в темі!<br>⚡️ Не пропусти найцікавіше — приєднуйся вже зараз!</p>
-
-  <p class="subscribers">
-    📈 На каналі вже понад <strong>12,221</strong> підписник!
-  </p>
-
-  <a href="https://t.me/+pJeg81A44cg5YWQy" class="telegram-btn"> Приєднатись у Telegram</a>
-
-  <ul class="benefits">
-    <li>✅ Ексклюзивні новини та аналітика</li>
-    <li>🚀 Швидкий доступ до трендів</li>
-    <li>📈 Щоденні оновлення для трейдерів і новачків</li>
-  </ul>
+  <div class="card">
+    <img src="photo_2025-05-29_22-02-33.jpg" alt="ОСЬО!" class="logo">
+    <h1>ОСЬО!</h1>
+    <div class="subscribers">58 623 subscribers</div>
+    <div class="description">Тут усе, що змушує сказати:<br><strong>"ОСЬО, файно придумали!" 😎</strong></div>
+    <div class="contact">Зв’язок: <a href="https://t.me/ocbo_reklam" style="color:#4FC3F7">@ocbo_reklam</a></div>
+    <div class="link">Посилання для друзів: https://t.me/+ruTzFuOSw25hZTc6</div>
+    <a href="https://t.me/+ruTzFuOSw25hZTc6" class="telegram-btn">Join Channel</a>
+  </div>
 </body>
 </html>
