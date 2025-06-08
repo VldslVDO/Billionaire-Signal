@@ -4,36 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ОСЬО! Telegram-канал</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       background: url("background.jpg") no-repeat center center fixed;
       background-size: cover;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: white;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       min-height: 100vh;
       padding: 20px;
       text-align: center;
     }
 
     .card {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: #1f1f1f; /* темний насичений фон */
       padding: 30px 20px;
       border-radius: 16px;
       max-width: 360px;
       width: 100%;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
     }
 
     .logo {
-      width: 100px;
-      height: 100px;
+      width: 96px;
+      height: 96px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
@@ -41,19 +40,21 @@
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 1.8em;
       margin: 0 0 5px;
+      font-weight: 700;
     }
 
     .subscribers {
-      font-size: 0.9em;
-      color: #ccc;
-      margin-bottom: 20px;
+      font-size: 0.95em;
+      color: #cccccc;
+      margin-bottom: 18px;
     }
 
     .description {
       font-size: 1em;
       margin-bottom: 15px;
+      color: #e0e0e0;
     }
 
     .contact {
@@ -65,30 +66,36 @@
       font-size: 0.85em;
       word-break: break-all;
       color: #aaa;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .telegram-btn {
       display: inline-block;
       background-color: #229ED9;
       color: white;
-      padding: 12px 24px;
+      padding: 14px 28px;
       font-size: 1em;
-      font-weight: bold;
+      font-weight: 500;
       border: none;
       border-radius: 50px;
       text-decoration: none;
-      transition: 0.3s ease;
+      transition: background-color 0.3s, transform 0.2s;
+      font-family: 'Roboto', sans-serif;
     }
 
     .telegram-btn:hover {
       background-color: #007ab8;
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
 
     @media (max-width: 480px) {
       .card {
         padding: 20px 15px;
+      }
+
+      .telegram-btn {
+        padding: 12px 24px;
+        font-size: 0.95em;
       }
     }
   </style>
@@ -99,7 +106,7 @@
     <h1>ОСЬО!</h1>
     <div class="subscribers">58 623 subscribers</div>
     <div class="description">Тут усе, що змушує сказати:<br><strong>"ОСЬО, файно придумали!" 😎</strong></div>
-    <div class="contact">Зв’язок: <a href="https://t.me/ocbo_reklam" style="color:#4FC3F7">@ocbo_reklam</a></div>
+    <div class="contact">Зв’язок: <a href="https://t.me/ocbo_reklam" style="color:#4FC3F7; text-decoration: none;">@ocbo_reklam</a></div>
     <div class="link">Посилання для друзів: https://t.me/+ruTzFuOSw25hZTc6</div>
     <a href="https://t.me/+ruTzFuOSw25hZTc6" class="telegram-btn">Join Channel</a>
   </div>
